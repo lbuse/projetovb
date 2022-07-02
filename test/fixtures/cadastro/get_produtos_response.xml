@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tns="vidado.service.wsdl" xmlns:xsd1="vidado.service.xsd">
+    <soap:Body>
+        <tns:get_produtosResponse>
+            <tns:resultado>[{"id":2,"id_grupo":1,"nome":"Hamburguer Vegetariano","quantidade_sugerida":1,"preco":"23.00","preco_custo":"17.00"}]</tns:resultado>
+        </tns:get_produtosResponse>
+    </soap:Body>
+</soap:Envelope>

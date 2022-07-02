@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"  xmlns:tns="vidado.service.wsdl" xmlns:xsd1="vidado.service.xsd">
+	<soap:Body>
+		<tns:get_mais_vendidos_por_grupoResponse>
+			<tns:resultado>[{"id_loja":1,"loja":"Loja Um","id_grupo":1,"grupo":"Hambúrgueres","quantidade_total":"683","valor_total":"17342.00","porcentagem":"0.710592"},{"id_loja":1,"loja":"Loja Um","id_grupo":2,"grupo":"Petiscos","quantidade_total":"303","valor_total":"1515.00","porcentagem":"0.062077"},{"id_loja":1,"loja":"Loja Um","id_grupo":3,"grupo":"Refrigerantes","quantidade_total":"257","valor_total":"1830.00","porcentagem":"0.074985"},{"id_loja":1,"loja":"Loja Um","id_grupo":4,"grupo":"Sucos","quantidade_total":"355","valor_total":"1775.00","porcentagem":"0.072731"},{"id_loja":1,"loja":"Loja Um","id_grupo":5,"grupo":"Cervejas","quantidade_total":"299","valor_total":"1943.00","porcentagem":"0.079615"}]</tns:resultado>
+		</tns:get_mais_vendidos_por_grupoResponse>
+	</soap:Body>
+</soap:Envelope>

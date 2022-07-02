@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"  xmlns:tns="vidado.service.wsdl" xmlns:xsd1="vidado.service.xsd">
+	<soap:Body>
+		<soap:Fault>
+			<soap:Code>
+				<soap:Value>400</soap:Value>
+				<soap:Subcode>
+					<soap:value>Data final &apos;undefined&apos; é inválida</soap:value>
+				</soap:Subcode>
+			</soap:Code>
+			<soap:Reason>
+				<soap:Text>Data final &apos;undefined&apos; é inválida</soap:Text>
+			</soap:Reason>
+		</soap:Fault>
+	</soap:Body>
+</soap:Envelope>

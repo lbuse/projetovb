@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tns="vidado.service.wsdl" xmlns:xsd1="vidado.service.xsd">
+    <soap:Body>
+        <tns:get_lojasResponse>
+            <tns:resultado>[{"id":1,"nome":"Loja Um","status":1,"pais":"Brasil","uf":"RS","cidade":"Caxias do Sul","endereco":"R. Sinimbu, 175 - Lourdes"}]</tns:resultado>
+        </tns:get_lojasResponse>
+    </soap:Body>
+</soap:Envelope>

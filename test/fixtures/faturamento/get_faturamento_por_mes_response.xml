@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tns="vidado.service.wsdl" xmlns:xsd1="vidado.service.xsd">
+    <soap:Body>
+        <tns:get_faturamento_por_mesResponse>
+            <tns:resultado>[{"id_loja":1,"loja":"Loja Um","quantidade_total":"3183","preco_total":"40759.00","pessoas_atendidas_total":"11731","ticket_medio":"3.474469","mes":12,"ano":2020},{"id_loja":2,"loja":"Loja Dois","quantidade_total":"3569","preco_total":"45719.00","pessoas_atendidas_total":"13106","ticket_medio":"3.488402","mes":12,"ano":2020}]</tns:resultado>
+        </tns:get_faturamento_por_mesResponse>
+    </soap:Body>
+</soap:Envelope>

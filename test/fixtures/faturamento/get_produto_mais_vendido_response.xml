@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tns="vidado.service.wsdl" xmlns:xsd1="vidado.service.xsd">
+    <soap:Body>
+        <tns:get_produto_mais_vendidoResponse>
+            <tns:resultado>[{"id_loja":1,"loja":"Loja Um","produto":"Hamburguer Vegetariano","quantidade_total":"262"},{"id_loja":2,"loja":"Loja Dois","produto":"Hamburguer Vegetariano","quantidade_total":"272"}]</tns:resultado>
+        </tns:get_produto_mais_vendidoResponse>
+    </soap:Body>
+</soap:Envelope>
