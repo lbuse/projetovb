@@ -20,5 +20,5 @@ VendaPorHorarioModel _$VendaPorHorarioModelFromJson(
       json['pessoas_atendidas_total'] == null
           ? 0
           : VendaPorHorario.readInt(json['pessoas_atendidas_total'] as String),
-      DateTime.parse(json['data'] as String),
+      VendaPorHorario.utcToLocal(json['data'] as String),
     );

@@ -24,5 +24,5 @@ FaturamentoPorDiaModel _$FaturamentoPorDiaModelFromJson(
       json['ticket_medio'] == null
           ? 0
           : FaturamentoPorDia.readDouble(json['ticket_medio'] as String),
-      DateTime.parse(json['data'] as String),
+      FaturamentoPorDia.utcToLocal(json['data'] as String),
     );

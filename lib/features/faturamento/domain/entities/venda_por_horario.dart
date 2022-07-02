@@ -15,6 +15,7 @@ class VendaPorHorario {
   @JsonKey(name: 'pessoas_atendidas_total', defaultValue: 0, fromJson: readInt)
   final int pessoasAtentidas;
 
+  @JsonKey(fromJson: utcToLocal)
   final DateTime data;
 
   VendaPorHorario(
@@ -28,4 +29,5 @@ class VendaPorHorario {
 
   static int readInt(String value) => int.parse(value);
   static double readDouble(String value) => double.parse(value);
+  static DateTime utcToLocal(String time) => DateTime.parse(time).toLocal();
 }
