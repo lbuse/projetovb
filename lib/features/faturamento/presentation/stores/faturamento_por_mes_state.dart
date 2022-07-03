@@ -40,7 +40,14 @@ abstract class _FaturamentoPorMesState with Store {
     required DateTime dataInicial,
     required DateTime dataFinal,
   }) async {
+    ///
+    /// [Inndica para a interface que a animação de carregamento deve ser exibida]
+    ///
     changeIsLoading(true);
+
+    ///
+    /// [Executa o caso de uso que consulta o faturamento por mês]
+    ///
     final getFaturamentoPorMes = await GetFaturamentoPorMes(_repository)(
       Params(
         dataInicial: dataInicial,
@@ -48,10 +55,17 @@ abstract class _FaturamentoPorMesState with Store {
       ),
     );
 
+    ///
+    /// [Assim que a consulta retornar, os valores serão utilizados nessa MVVM]
+    ///
     getFaturamentoPorMes.fold(
       (failure) => changeErrorMessage(failure.message),
       (faturamentos) => changeFaturamentoPorMes(faturamentos),
     );
+
+    ///
+    /// [Inndica para a interface que a animação de carregamento deve ser finalizada]
+    ///
     changeIsLoading(false);
   }
 }

@@ -3,6 +3,7 @@ import 'dart:io';
 
 import 'package:http/http.dart' as http;
 
+import '../../../../core/helpers/config.dart';
 import '../../../../core/helpers/soap_response_envelope_parser.dart';
 import '../../../../core/models/exception.dart';
 import '../../domain/entities/loja.dart';
@@ -17,7 +18,7 @@ class LojasDatasourceImpl implements LojasDatasource {
   late Uri _uri;
 
   LojasDatasourceImpl(this.httpClient, {Uri? uri}) {
-    _uri = uri ?? Uri.parse('http://192.168.10.28:3000/wsdl');
+    _uri = uri ?? Uri.parse(Config.uri);
   }
 
   @override
