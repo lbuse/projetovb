@@ -1,16 +1,13 @@
-# vidado
+# Soap Client Demo
 
-A new Flutter project.
+Demo of a Flutter app comunicating with a SOAP Webservice
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Before building the project, create a `.env` file with the following value.
 
-A few resources to get you started if this is your first Flutter project:
+`URI='http://WEBSERVICE_ADDRESS/wsdl'`
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+----- 
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+To check the webservice project, go to this [repo](https://github.com/lbuse/vidado-api).
